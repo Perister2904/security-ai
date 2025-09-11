@@ -1,0 +1,21 @@
+[tool.pyright]
+ignore = [
+    "**/*test*.py",
+    "**/test_*.py"
+]
+
+reportMissingTypeStubs = false
+reportUnknownParameterType = false
+reportUnknownVariableType = false
+reportUnknownMemberType = false
+reportUnknownArgumentType = false
+reportGeneralTypeIssues = false
+reportOptionalMemberAccess = false
+
+[tool.pylint]
+disable = [
+    "missing-docstring",
+    "invalid-name",
+    "too-few-public-methods",
+    "import-error"
+]

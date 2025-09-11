@@ -1,0 +1,24 @@
+version: '3.8'
+services:
+  zap:
+    image: owasp/zap2docker-stable
+    command: sleep infinity # Only illustrative; run via Python
+    volumes:
+      - ./data/raw:/zap/wrk
+    user: zap
+  nuclei:
+    image: projectdiscovery/nuclei
+    command: sleep infinity
+    volumes:
+      - ./data/raw:/data
+  trivy:
+    image: aquasec/trivy
+    command: sleep infinity
+    volumes:
+      - .:/project
+      - ./data/raw:/data
+  # Optional Ollama service (Linux/macOS only)
+  # ollama:
+  #   image: ollama/ollama
+  #   ports:
+  #     - "11434:11434"

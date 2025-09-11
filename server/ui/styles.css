@@ -1,0 +1,101 @@
+body { 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    background: #f5f5f5; 
+    margin: 0; 
+    padding: 0; 
+}
+.container { 
+    max-width: 900px; 
+    margin: 20px auto; 
+    background: #fff; 
+    padding: 30px; 
+    border-radius: 8px; 
+    box-shadow: 0 2px 12px rgba(0,0,0,0.1); 
+}
+.banner { 
+    background: #e3f2fd; 
+    color: #1976d2; 
+    padding: 12px; 
+    text-align: center; 
+    font-weight: bold; 
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+form { 
+    margin-bottom: 24px; 
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+input[type=text] { 
+    padding: 12px; 
+    width: 400px; 
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+}
+button { 
+    padding: 12px 20px; 
+    background: #1976d2;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+}
+button:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+}
+button:hover:not(:disabled) {
+    background: #1565c0;
+}
+#status {
+    background: #f8f9fa;
+    border: 1px solid #e9ecef;
+    border-radius: 4px;
+    padding: 12px;
+    margin: 16px 0;
+    font-family: monospace;
+    font-size: 13px;
+}
+.log {
+    background: #1e1e1e;
+    color: #f0f0f0;
+    border-radius: 4px;
+    padding: 16px;
+    margin: 16px 0;
+    height: 300px;
+    overflow-y: auto;
+    font-family: 'Consolas', 'Monaco', monospace;
+    font-size: 12px;
+    line-height: 1.4;
+}
+.card { 
+    background: #f9f9f9; 
+    border: 1px solid #e0e0e0; 
+    border-radius: 8px; 
+    margin: 16px 0; 
+    padding: 20px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+.priority { 
+    float: right; 
+    padding: 6px 14px; 
+    border-radius: 16px; 
+    color: #fff; 
+    font-weight: bold; 
+    font-size: 12px;
+    text-transform: uppercase;
+}
+.priority.critical { background: #d32f2f; }
+.priority.high { background: #f57c00; }
+.priority.medium { background: #fbc02d; color: #333; }
+.priority.low { background: #388e3c; }
+.priority.info { background: #1976d2; }
+h1 { color: #333; margin-bottom: 30px; }
+h2 { color: #444; margin: 24px 0 16px 0; }
+h3, h4 { margin: 12px 0 8px 0; color: #555; }
+ul { margin: 8px 0 0 20px; }
+li { margin: 4px 0; }

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Pentesting AI Dashboard</title>
+  <link rel="stylesheet" href="/ui/styles.css">
+</head>
+<body>
+  <div class="banner">Authorized testing only. Provide target URL and run a real scan.</div>
+  <div class="container">
+    <h1>Pentesting AI Dashboard</h1>
+    <form id="scan-form">
+      <input type="text" id="target" placeholder="Target URL" required>
+      <button type="submit" id="scan-btn">Run Scan</button>
+    </form>
+    <div id="status"></div>
+    <h2>Live Log</h2>
+    <pre id="log" class="log"></pre>
+    <div id="summary"></div>
+    <div id="report"></div>
+  </div>
+  <script src="/ui/app.js"></script>
+</body>
+</html>

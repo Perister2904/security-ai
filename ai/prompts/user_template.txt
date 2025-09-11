@@ -1,0 +1,16 @@
+Given the following findings JSON, group duplicate/near-duplicate findings by asset + title similarity. Prioritize (Critical→Info) and add a short justification of risk. For each group: include why_it_matters (plain language), fix_steps (3–6 bullets), source_tools, and raw_links. Include tags if present (CWE, OWASP). Output shape:
+{
+  "summary": { "assets_scanned": n, "total_findings": n, "critical": n, "high": n, "medium": n, "low": n, "info": n },
+  "items": [
+    {
+      "asset": "string",
+      "priority": "critical|high|medium|low|info",
+      "title": "string",
+      "tags": ["CWE-79","OWASP A03"],
+      "why_it_matters": "string",
+      "fix_steps": ["..."],
+      "source_tools": ["zap","nuclei"],
+      "evidence": ["file://..."]
+    }
+  ]
+}
